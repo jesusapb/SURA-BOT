@@ -1,0 +1,75 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package botsura;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author japb1
+ */
+public class quiz {
+    public ArrayList<String> Respuestas;
+    public int NoInt;  
+    public int Calificacion;
+    
+    public quiz(){
+       this.Respuestas= new ArrayList<String>();    
+    }
+    
+   //se agrega la respuesta al arreglo dinamico
+   public void agregarRespuesta(String abc){
+       Respuestas.add(abc);
+   }
+    
+   public int getNoInt(){
+       return NoInt;
+   }
+   
+    public int getRespuestasCounter() {
+        return Respuestas.size();
+    }
+   
+   
+   
+   public int getCalificacion(){
+       return Calificacion;
+       
+   }
+   
+   public int setCalificacion(){
+       
+       return Calificacion;
+   }
+   
+   public void imprimirRespuestas(){
+       int i;
+       for(i=0;i<Respuestas.size();i++){
+           System.out.println(Respuestas.get(i));
+       }
+   }
+   
+   public int calificarQuiz(){
+      int cal=0,i;
+      
+      //aqui se calificaran las preguntas
+     for(i=0;i<Respuestas.size();i++){
+         
+     }
+      return cal;
+       
+   }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
