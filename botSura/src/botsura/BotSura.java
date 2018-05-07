@@ -21,6 +21,9 @@ public class BotSura {
         consul.imprimirPreguntas();
         
         
+        trabajador act= new trabajador("23454","fgggds");
+        
+        act.ActualizarArchivo(1,"actualizacion correcta");
     }
     
 }
