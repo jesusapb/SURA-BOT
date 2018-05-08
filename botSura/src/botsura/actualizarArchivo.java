@@ -16,14 +16,48 @@ import java.io.PrintWriter;
  */
 public class actualizarArchivo {
     //se requiere una clase especial para actualizar los datos
-
+    FileWriter fichero = null;
+    PrintWriter pw = null; 
+  
+    public actualizarArchivo(){
+        try
+        {
+            
+            
+            fichero = new FileWriter("base1.txt");
+            pw = new PrintWriter(fichero);
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+           try {
+           // Nuevamente aprovechamos el finally para 
+           // asegurarnos que se cierra el fichero.
+           if (null != fichero)
+              fichero.close();
+           } catch (IOException e2) {
+              e2.printStackTrace();
+           }
+    }
+    }
     
     
     
     
+    public void actualizar(int num, String Actualizacion){
+       int i;
+        leerArchivo arreglo= new leerArchivo("base1.txt");
+        arreglo.lista.set(num, Actualizacion);
+        for(i=0;i < arreglo.lista.size();i++){
+          pw.println(arreglo.lista.get(i));
+        }
+        
+         
+        //remove(int index)
+    }
+  
     
-    
-    
+   
     
     
 }

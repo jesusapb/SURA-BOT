@@ -16,14 +16,15 @@ public class BotSura {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        preguntas consul= new preguntas("quiz1.txt");
-        consul.imprimirArreglo();
-        consul.imprimirPreguntas();
+        //preguntas consul= new preguntas("quiz1.txt");
+        //consul.imprimirArreglo();
+        //consul.imprimirPreguntas();
         
         
-        trabajador act= new trabajador("23454","fgggds");
-        
-        act.ActualizarArchivo(1,"actualizacion correcta");
+       actualizarArchivo act= new actualizarArchivo();
+       act.actualizar(3,"hola");
+       
+       
     }
     
 }

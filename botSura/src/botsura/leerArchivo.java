@@ -17,41 +17,28 @@ import java.util.Scanner;
  *
  * @author japb1
  */
-public class trabajador {
+public class leerArchivo {
     public String matricula;
     public String correo;
-    public ArrayList<String> listaMat;
+    public ArrayList<String> lista;
     Scanner file;
-    /**
-     *
-     * @param matricula
-     * @param correo
-     */
+  
     
-    public trabajador(String matricula, String correo){
+    public leerArchivo(String Archivo){
         
-        this.matricula = matricula;
-        this.correo=correo;
-    //el constructor abre el archivo, lo lee y vacea el contenido en un arreglo dinamic
-    this.listaMat =new ArrayList<String>();  
+    this.lista =new ArrayList<>();  
     try {
-        file = new Scanner(new File("base1.txt"));
-        } catch (FileNotFoundException ex) {
+        file = new Scanner(new File(Archivo));
+        } catch (FileNotFoundException ex){
            // Logger.getLogger(FileReader.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
         }
-    while (file.hasNextLine()){
-         listaMat.add(file.nextLine());
+    while (file.hasNextLine()!=false){
+         lista.add(file.nextLine());
         }
-        //file.close();    
-    }    
-        
-    //hay que parsear el archivo
-    //se borrara del arreglo
+       file.close();    
+    }   
     
-    public void borrarTrabajador(int i){
-        listaMat.remove(i);
-    }
     
     
     public boolean identificarse(){
@@ -72,61 +59,13 @@ public class trabajador {
        String content = "";
        content+= matricula + "," + correo + "," + respuestas;
     }
-    
-   
-    
-    public String getMatricula(){
-        return matricula;
-    }
-    
-    public String setMatricula(){
-        return matricula;
-    }
-    
-    public String getCorreo(){
-        return correo;
+    public ArrayList<String> getlista() {
+        return lista;
     }
     
     
-    
-    public ArrayList<String> getlistaMat() {
-        return listaMat;
-    }
-    
-    public int getlistaMatCounter(){
-        return listaMat.size();
-    }
-    
-    
-    //esta clase es la unica que elimina y edita el archivo
-    public void ActualizarArchivo(int linea, String Actualizacion){
-       FileWriter fichero = null;
-        PrintWriter pw = null;
-        try
-        {
-            fichero = new FileWriter("base1.txt");
-            pw = new PrintWriter(fichero);
-
-            for (int i = 0; i < listaMat.size(); i++)
-                if(i!=linea){
-                pw.println(listaMat.get(i));
-                }else{
-                    pw.println(Actualizacion +"\n");
-                } 
-            
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-           try {
-           // Nuevamente aprovechamos el finally para 
-           // asegurarnos que se cierra el fichero.
-           if (null != fichero)
-              fichero.close();
-           } catch (IOException e2) {
-              e2.printStackTrace();
-           }
-    }
+    public int getlistaCounter(){
+        return lista.size();
     }
     
     
