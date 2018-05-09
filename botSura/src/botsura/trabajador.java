@@ -5,14 +5,6 @@
  */
 package botsura;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Scanner;
-
 /**
  *
  * @author japb1
@@ -20,8 +12,10 @@ import java.util.Scanner;
 public class trabajador {
     public String matricula;
     public String correo;
-    public ArrayList<String> listaMat;
-    Scanner file;
+    public String archivo;
+    leerArchivo trabajadores;
+    //public ArrayList<String> listaMat;
+    //Scanner file;
     /**
      *
      * @param matricula
@@ -29,29 +23,17 @@ public class trabajador {
      */
     
     public trabajador(String matricula, String correo){
-        
+        this.archivo="base1.txt";
         this.matricula = matricula;
         this.correo=correo;
-    //el constructor abre el archivo, lo lee y vacea el contenido en un arreglo dinamic
-    this.listaMat =new ArrayList<String>();  
-    try {
-        file = new Scanner(new File("base1.txt"));
-        } catch (FileNotFoundException ex) {
-           // Logger.getLogger(FileReader.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println(ex.getMessage());
-        }
-    while (file.hasNextLine()){
-         listaMat.add(file.nextLine());
-        }
-       file.close();    
+        trabajadores= new leerArchivo(archivo);
+        
+        
     }    
         
-    //hay que parsear el archivo
-    //se borrara del arreglo
-    
-    public void borrarTrabajador(int i){
-        listaMat.remove(i);
-    }
+    public  void imprimir(){
+        trabajadores.imprimirlista();
+    } 
     
     
     public boolean identificarse(){
@@ -84,20 +66,15 @@ public class trabajador {
     }
     
     public String getCorreo(){
-        return correo;
+        return this.correo;
+    }
+    
+    public String setCorreo(){
+        return this.correo;
     }
     
     
-    
-    public ArrayList<String> getlistaMat() {
-        return listaMat;
-    }
-    
-    public int getlistaMatCounter(){
-        return listaMat.size();
-    }
-    
-    
+    /*
     //esta clase es la unica que elimina y edita el archivo
     public void ActualizarArchivo(int linea, String Actualizacion){
        FileWriter fichero = null;
@@ -126,11 +103,6 @@ public class trabajador {
            }
     }
     }
-    
-    
-    
-    public void closeFile(){
-        file.close();
-    } 
 
+*/
 }

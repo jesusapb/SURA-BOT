@@ -7,6 +7,9 @@ package botsura;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -20,7 +23,7 @@ public class leerArchivo {
     
     public leerArchivo(String archivo){
 
-    this.lista =new ArrayList<String>();  
+    this.lista =new ArrayList<>();  
     try {
             file = new Scanner(new File(archivo));
         } catch (FileNotFoundException ex) {
@@ -30,13 +33,18 @@ public class leerArchivo {
     while (file.hasNextLine()){
          lista.add(file.nextLine());
         }
-       file.close();
+       //file.close();
     }
+    
+    
+    
     
     public ArrayList<String> getlista() {
         return lista;
     }
-    
+    public void borrarTrabajador(int i){
+        lista.remove(i);
+    }
     
     public void setactualizarLista(int i,String Actualizar){
       this.lista.set(i, Actualizar);
@@ -79,6 +87,36 @@ public class leerArchivo {
         System.out.println(lista.get(i+2));
         }
     }
+    
+    //actualizar el archivo
+     public void ActualizarArchivo(int linea, String Actualizacion){
+       FileWriter fichero = null;
+        PrintWriter pw = null;
+        try
+        {
+            fichero = new FileWriter("base1.txt");
+            pw = new PrintWriter(fichero);
+                lista.set(linea, Actualizacion);
+            for (int i = 0; i < lista.size(); i++)
+               // if(i!=linea){
+              pw.println(lista.get(i));
+                //}else{
+                  //  pw.println(Actualizacion +"\n");
+                //} 
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+           try {
+           // Nuevamente aprovechamos el finally para 
+           // asegurarnos que se cierra el fichero.
+           if (null != fichero)
+              fichero.close();
+           } catch (IOException e2) {
+              e2.printStackTrace();
+           }
+    }
+    }
+    
     
     
     //cierro el archivo

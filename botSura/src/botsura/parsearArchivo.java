@@ -5,10 +5,16 @@
  */
 package botsura;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author japb1
  */
 public class parsearArchivo {
+    public ArrayList<String> devices;
+    String content;
+    
+    
     
 }
