@@ -17,7 +17,7 @@ public class quiz {
     public int Calificacion;
     
     public quiz(){
-       this.Respuestas= new ArrayList<>();    
+       this.Respuestas= new ArrayList<String>();    
     }
     
    //se agrega la respuesta al arreglo dinamico
@@ -33,15 +33,7 @@ public class quiz {
         return Respuestas.size();
     }
    
-   //pasar el arreglo a un String
-    public String getContenido(){
-        String contenido="";
-        for(int i=0;i<Respuestas.size();i++){
-            contenido+=Respuestas.get(i);
-        }
-        return contenido;
-    }
-    
+   
    
    public int getCalificacion(){
        return Calificacion;

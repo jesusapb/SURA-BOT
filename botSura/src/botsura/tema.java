@@ -15,18 +15,33 @@ import java.util.Scanner;
  * @author japb1
  */
 public class tema {
-   String archivo;
-   leerArchivo temas;
-    
-   public tema(){
-        this.archivo="tema.txt";
-        temas= new leerArchivo(this.archivo);     
+     public ArrayList<String> temas;
+    Scanner file;
+    //el constructor abre el archivo, lo lee y vacia 
+    //como el contenido en un arreglo dinamico
+    public tema(String archivo){
+    this.temas =new ArrayList<String>();  
+    try {
+            file = new Scanner(new File(archivo));
+        } catch (FileNotFoundException ex) {
+           // Logger.getLogger(FileReader.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex.getMessage());
+        }
+    while (file.hasNextLine()){
+         temas.add(file.nextLine());
+        }
+        file.close();
     }     
     
     
+     public ArrayList<String> gettemas() {
+        return temas;
+    }
     
+      public int gettemasCounter() {
+        return temas.size();
+    }
     
-   /*     
 public void imprimirTema(){
        for(int i=0;i<this.temas.size();i=i+2){
         System.out.println(temas.get(i));
@@ -40,7 +55,7 @@ public void imprimirTema(){
         }
     }    
     
-    */
+    
     
     
 }
