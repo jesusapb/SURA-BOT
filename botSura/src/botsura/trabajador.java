@@ -43,7 +43,7 @@ public class trabajador {
     while (file.hasNextLine()){
          listaMat.add(file.nextLine());
         }
-        //file.close();    
+       file.close();    
     }    
         
     //hay que parsear el archivo
@@ -106,15 +106,13 @@ public class trabajador {
         {
             fichero = new FileWriter("base1.txt");
             pw = new PrintWriter(fichero);
-
+                listaMat.set(linea,Actualizacion);
             for (int i = 0; i < listaMat.size(); i++)
-                if(i!=linea){
+               // if(i!=linea){
                 pw.println(listaMat.get(i));
-                }else{
-                    pw.println(Actualizacion +"\n");
-                } 
-            
-            
+                //}else{
+                  //  pw.println(Actualizacion +"\n");
+                //} 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

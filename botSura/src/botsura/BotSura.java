@@ -16,14 +16,24 @@ public class BotSura {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        preguntas consul= new preguntas("quiz1.txt");
-        consul.imprimirArreglo();
-        consul.imprimirPreguntas();
+        //preguntas consul= new preguntas("quiz1.txt");
+        //consul.imprimirArreglo();
+        //consul.imprimirPreguntas();
         
+       
+       //actualizarArchivo act = new actualizarArchivo("base1.txt");
+       //act.Actualizar3(1,"actualizacion correcta");
+     // 
+     // act.actualizar(2,"actualizar");
+       //trabajadordos base = new trabajadordos("base1.txt"); 
+        //base.actualizar("hola");
+        //base.imprimir();
+       // leerArchivo art= new leerArchivo("base1.txt");
+        //art.getContentFile();
         
-        trabajador act= new trabajador("23454","fgggds");
-        
-        act.ActualizarArchivo(1,"actualizacion correcta");
+        actualizarArchivo base= new actualizarArchivo("base1.txt");
+        base.actualizar(2,"hola4");
+        base.terminarActualizacion();
     }
     
 }
