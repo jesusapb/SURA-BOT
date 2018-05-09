@@ -92,6 +92,49 @@ public class trabajador {
     }
     
     
+    
+    public ArrayList<String> getlistaMat() {
+        return listaMat;
+    }
+    
+    public int getlistaMatCounter(){
+        return listaMat.size();
+    }
+    
+    
+    //esta clase es la unica que elimina y edita el archivo
+    public void ActualizarArchivo(int linea, String Actualizacion){
+       FileWriter fichero = null;
+        PrintWriter pw = null;
+        try
+        {
+            fichero = new FileWriter("base1.txt");
+            pw = new PrintWriter(fichero);
+
+            for (int i = 0; i < listaMat.size(); i++)
+                if(i!=linea){
+                pw.println(listaMat.get(i));
+                }else{
+                    pw.println(Actualizacion +"\n");
+                } 
+            
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+           try {
+           // Nuevamente aprovechamos el finally para 
+           // asegurarnos que se cierra el fichero.
+           if (null != fichero)
+              fichero.close();
+           } catch (IOException e2) {
+              e2.printStackTrace();
+           }
+    }
+    }
+    
+    
+    
     public void closeFile(){
         file.close();
     }    
