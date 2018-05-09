@@ -1,4 +1,6 @@
 hola
 perro
 gato
-zorra
+agua
+fuego
+sol
