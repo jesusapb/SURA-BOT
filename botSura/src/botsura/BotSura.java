@@ -15,12 +15,17 @@ public class BotSura {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        preguntas consul= new preguntas("quiz1.txt");
-        consul.imprimirArreglo();
-        consul.imprimirPreguntas();
-        
-        
+     
+       leerArchivo art= new leerArchivo("base1.txt");
+       art.imprimirlista();
+       
+       leerArchivo base= new leerArchivo("base1.txt");
+       base.ActualizarArchivo(5,"gato");
+       preguntas cuest= new preguntas();
+       cuest.imprimir();
+       trabajador emp= new trabajador("gato","solo esta");
+       emp.imprimir();
+       
     }
     
 }
