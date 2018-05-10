@@ -5,6 +5,8 @@
  */
 package botsura;
 
+import java.util.Arrays;
+
 /**
  *
  * @author japb1
@@ -16,16 +18,14 @@ public class BotSura {
      */
     public static void main(String[] args) {
      
-       leerArchivo art= new leerArchivo("base1.txt");
-       art.imprimirlista();
-       
-       leerArchivo base= new leerArchivo("base1.txt");
-       base.ActualizarArchivo(5,"gato");
-       preguntas cuest= new preguntas();
-       cuest.imprimir();
-       trabajador emp= new trabajador("gato","solo esta");
-       emp.imprimir();
-       
+      //trabajador emp= new trabajador("hola","111");
+      //emp.imprimir();
+      parsearArchivo busc= new parsearArchivo();
+      busc.getString();
+      
+      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
+      
+      
     }
     
 }
