@@ -62,10 +62,24 @@ public class quiz {
    
    public int calificarQuiz(){
       int cal=0,i;
-      
       //aqui se calificaran las preguntas
-     for(i=0;i<Respuestas.size();i++){
-         
+      for(i=0;i<Respuestas.size();i++){
+          
+      }
+     if(Respuestas.get(1).equals("a")){
+      cal++;
+     }
+     if(Respuestas.get(2).equals("a")){
+      cal++;
+     }
+     if(Respuestas.get(3).equals("a")){
+      cal++;
+     }
+     if(Respuestas.get(4).equals("a")){
+      cal++;
+     }
+     if(Respuestas.get(5).equals("a")){
+      cal++;
      }
       return cal;
        

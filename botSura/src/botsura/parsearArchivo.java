@@ -35,18 +35,21 @@ public class parsearArchivo {
     public String[] parsingContent(){
         
         String[] parsing= content.split(",");
-       for (int i = 0; i<parsing.length; i++) {
-        System.out.println(parsing[i]);
-         }
+       for(int i = 0; i<parsing.length; i++) {
+       System.out.println(parsing[i]);
+       }
         return parsing;
     }
     
     
     public int validarTrabajador(String[] parsing, String trabajador, String correo){
-        int j=-1,i;
-        for(i=0;i<=parsing.length;i+=3){
-            if(parsing[i].equals(trabajador) && parsing[i+1].equals(correo)){
-                j=i;
+        int j=-1;
+        for(int i=0;i<=parsing.length;i=i+2){
+            if(parsing[i].equals(trabajador)){
+                if (parsing[i+1].equals(correo)) {
+                    j=i;
+                    return j;
+                }
             }
         }
         return j;

@@ -23,7 +23,7 @@ public class BotSura {
       parsearArchivo busc= new parsearArchivo();
       busc.getString();
       
-      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
+      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "faceboo"));
       
       
     }
