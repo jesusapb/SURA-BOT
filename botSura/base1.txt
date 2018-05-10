@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-111,ggg
-actualizacion correcta
-
-333,hjgbns
-=======
-1
-2
-3
-4
-5
-gato
-7
-8
->>>>>>> parent of 29ff416... Revert "Merge branch 'rama2'"
+111,facebook,44
+aaa,55,78
+113,perro,46

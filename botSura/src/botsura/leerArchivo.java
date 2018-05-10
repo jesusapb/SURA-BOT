@@ -74,9 +74,11 @@ public class leerArchivo {
      String content = "";
      int i;
      for(i=0;i<lista.size();i++){
-         content+=lista.get(i)+ "\n"; 
+         content+=lista.get(i) + "\n"; 
      }
-     System.out.println(content);
+     file.close();
+     
+    //System.out.println(content);
     return content;
     }
     

@@ -55,7 +55,20 @@ public class trabajador {
        content+= matricula + "," + correo + "," + respuestas;
     }
     
-   
+    
+    
+   public boolean validarTrabajador(){
+       boolean existe=false;
+       int k;
+        parsearArchivo busc= new parsearArchivo();
+      busc.getString();
+      
+      k=busc.validarTrabajador(busc.parsingContent(),"11", "facebook");
+      if(k!=-1){
+          existe=true;
+      }
+       return existe;
+   }
     
     public String getMatricula(){
         return matricula;
@@ -69,90 +82,5 @@ public class trabajador {
         return this.correo;
     }
     
-<<<<<<< HEAD
-    
-    
-    public ArrayList<String> getlistaMat() {
-        return listaMat;
-    }
-    
-    public int getlistaMatCounter(){
-        return listaMat.size();
-    }
-    
-    
-    //esta clase es la unica que elimina y edita el archivo
-    public void ActualizarArchivo(int linea, String Actualizacion){
-       FileWriter fichero = null;
-        PrintWriter pw = null;
-        try
-        {
-            fichero = new FileWriter("base1.txt");
-            pw = new PrintWriter(fichero);
 
-            for (int i = 0; i < listaMat.size(); i++)
-                if(i!=linea){
-                pw.println(listaMat.get(i));
-                }else{
-                    pw.println(Actualizacion +"\n");
-                } 
-            
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-           try {
-           // Nuevamente aprovechamos el finally para 
-           // asegurarnos que se cierra el fichero.
-           if (null != fichero)
-              fichero.close();
-           } catch (IOException e2) {
-              e2.printStackTrace();
-           }
-    }
-    }
-    
-    
-    
-    public void closeFile(){
-        file.close();
-    }    
-=======
-    public String setCorreo(){
-        return this.correo;
-    }
->>>>>>> parent of 29ff416... Revert "Merge branch 'rama2'"
-    
-    
-    /*
-    //esta clase es la unica que elimina y edita el archivo
-    public void ActualizarArchivo(int linea, String Actualizacion){
-       FileWriter fichero = null;
-        PrintWriter pw = null;
-        try
-        {
-            fichero = new FileWriter("base1.txt");
-            pw = new PrintWriter(fichero);
-                listaMat.set(linea,Actualizacion);
-            for (int i = 0; i < listaMat.size(); i++)
-               // if(i!=linea){
-                pw.println(listaMat.get(i));
-                //}else{
-                  //  pw.println(Actualizacion +"\n");
-                //} 
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-           try {
-           // Nuevamente aprovechamos el finally para 
-           // asegurarnos que se cierra el fichero.
-           if (null != fichero)
-              fichero.close();
-           } catch (IOException e2) {
-              e2.printStackTrace();
-           }
-    }
-    }
-
-*/
 }
