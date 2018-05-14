@@ -44,15 +44,19 @@ public class parsearArchivo {
     
     public int validarTrabajador(String[] parsing, String trabajador, String correo){
         int j=-1;
-        for(int i=0;i<=parsing.length;i=i+2){
+        for(int i=0;i<parsing.length;i=i+3){
             if(parsing[i].equals(trabajador)){
                 if (parsing[i+1].equals(correo)) {
-                    j=i;
+                    j=0;
                     return j;
                 }
             }
         }
         return j;
     }
-   
+    
+    
+    
+    
+    
 }

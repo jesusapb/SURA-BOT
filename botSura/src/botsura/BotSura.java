@@ -18,12 +18,12 @@ public class BotSura {
      */
     public static void main(String[] args) {
      
-      //trabajador emp= new trabajador("hola","111");
+     //trabajador emp= new trabajador("hola","111");
       //emp.imprimir();
       parsearArchivo busc= new parsearArchivo();
       busc.getString();
       
-      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "faceboo"));
+      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
       
       
     }
