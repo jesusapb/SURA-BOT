@@ -5,6 +5,8 @@
  */
 package botsura;
 
+import vista.inicio;
+
 /**
  *
  * @author japb1
@@ -24,8 +26,14 @@ public class trabajador {
     
     public trabajador(String matricula, String correo){
         this.archivo="base1.txt";
+        
+        
         this.matricula = matricula;
-        this.correo=correo;
+        
+        // this.matricula = inicio.matricula.getText();
+         this.correo=correo;
+        // this.correo= inicio.correo.getText();
+        
         trabajadores= new leerArchivo(archivo);
         
         
