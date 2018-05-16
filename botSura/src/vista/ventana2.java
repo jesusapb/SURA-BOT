@@ -6,6 +6,12 @@
 
 package vista;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author japb1
@@ -102,7 +108,22 @@ public class ventana2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-     ventana3 abrir= new ventana3();
+     
+        File archivo = new File("temas.txt"); 
+        try {
+            //Leer texto
+            BufferedReader leer = new BufferedReader(new FileReader(archivo));
+            String linea = leer.readLine();
+            while(linea!=null){
+                jTextArea1.append(linea+"\n");
+                linea = leer.readLine();
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(ventana1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        ventana3 abrir= new ventana3();
      abrir.setVisible(true);
         //se cierra la ventana para que todo pase en la nueva ventana oculto solo para trabajar
        // this.dispose(); 
