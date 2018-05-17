@@ -120,6 +120,8 @@ public class ventana1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        //la idea es modularizar esta parte del codigo para que cumpla el formato MVC  
+        //usando un formato con mayor utilidad para que los botones sirvan
         
         File archivo = new File("temas.txt"); 
         try {

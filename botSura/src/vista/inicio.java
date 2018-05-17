@@ -20,8 +20,8 @@ public class inicio extends javax.swing.JFrame {
             //
             //crear tres variables para enviar el dato a la ventana del quiz donde se guardaran el nombre el correo y el numero de linea
             //
-     //public static String matricula;
-    // public static String correo;
+     //public static String identificador;
+    // public static String segundoIdentificador;
      //public static int num;
     
     
@@ -117,7 +117,9 @@ public class inicio extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        //se tomaran los valores de la ventan 
+        //se tomaran los valores de la ventana y se invocara al la clase 
+        //trabajador en ellos se buscara si existe o no el trabajador y 
+        //si es el caso se abrira la segunda ventana 
         
         
         
