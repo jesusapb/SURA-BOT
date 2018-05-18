@@ -10,13 +10,13 @@ package botsura;
  *
  * @author japb1
  */
-public class preguntas {
+public class Pregunta {
 //   public ArrayList<String> cuestionario;
    String archivo;
    leerArchivo preguntas;
    
     //el constructor abre el archivo, lo lee y vacea el contenido en un arreglo dinamico
-    public preguntas(){
+    public Pregunta(){
    this.archivo="quiz1.txt";
    preguntas= new leerArchivo(this.archivo);    
      

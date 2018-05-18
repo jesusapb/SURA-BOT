@@ -9,7 +9,7 @@ package botsura;
  *
  * @author japb1
  */
-public class capacitacion {
+public class Capacitacion {
     public int avance;
     
     //aqui se invocaran los temas

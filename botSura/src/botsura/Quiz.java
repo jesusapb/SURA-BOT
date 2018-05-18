@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author japb1
  */
-public class quiz {
+public class Quiz {
     public ArrayList<String> Respuestas;
     public int NoInt;  
     public int Calificacion;
     
-    public quiz(){
+    public Quiz(){
        this.Respuestas= new ArrayList<>();    
     }
     

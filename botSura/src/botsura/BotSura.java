@@ -20,7 +20,7 @@ public class BotSura {
      
      //trabajador emp= new trabajador("hola","111");
       //emp.imprimir();
-      parsearArchivo busc= new parsearArchivo();
+      ParsearArchivo busc= new ParsearArchivo();
       busc.getString();
       
       System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));

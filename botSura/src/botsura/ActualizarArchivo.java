@@ -17,13 +17,13 @@ import java.io.PrintWriter;
  *
  * @author japb1
  */
-public class actualizarArchivo {
+public class ActualizarArchivo {
     //se requiere una clase especial para actualizar los datos
   FileWriter fichero;
   PrintWriter pw;  
     String archivo;
     
-    public actualizarArchivo(String archivo){
+    public ActualizarArchivo(String archivo){
         this.archivo=archivo;
         fichero=null;
         pw=null;
