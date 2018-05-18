@@ -23,7 +23,7 @@ public class ventana1 extends javax.swing.JFrame {
     public ventana1() {
         initComponents();
     }
-
+    public static int avan=0;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -128,7 +128,11 @@ public class ventana1 extends javax.swing.JFrame {
         
         //este metodo formatea el cuadro de texto y deja
         //a disponicion para que se llene de nuevo el cuadro de texto
+<<<<<<< Updated upstream
        // jTextArea1.setText(null);
+=======
+       jTextArea1.setText(null);
+>>>>>>> Stashed changes
         
         
         

@@ -20,6 +20,7 @@ public class BotSura {
      
      //trabajador emp= new trabajador("hola","111");
       //emp.imprimir();
+<<<<<<< Updated upstream
       //ParsearArchivo busc= new ParsearArchivo();
      // busc.getString();
       
@@ -29,6 +30,19 @@ public class BotSura {
       
       Tema temit = new Tema();
      System.out.println(temit.imprimirTema(0));
+=======
+     ParsearArchivo busc= new ParsearArchivo();
+     busc.getString();
+      
+      System.out.println(busc.validarTrabajador(busc.parsingContent(),"444", "twitter"));
+     
+
+      // Pregunta consulta= new Pregunta();
+      //System.out.println(consulta.optenerpregunta(0));
+      
+      //Tema temit = new Tema();
+     //System.out.println(temit.imprimirTema(0));
+>>>>>>> Stashed changes
       
       
     }
