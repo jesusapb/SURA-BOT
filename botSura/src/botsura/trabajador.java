@@ -57,7 +57,7 @@ public class trabajador {
     
     
     //concatenar la nueva matricula
-    
+    //ete metodo es muy utlia que aqulo qw¿ ¿
     public void actualizarTrabajador(String respuestas){
        String content = "";
        content+= matricula + "," + correo + "," + respuestas;
@@ -77,6 +77,7 @@ public class trabajador {
       }
        return existe;
    }
+   
     
     public String getMatricula(){
         return matricula;

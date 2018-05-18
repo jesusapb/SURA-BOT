@@ -163,6 +163,8 @@ public class inicio extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new inicio().setVisible(true);
+                
+                //centrar ventana y agregar un nombre a esta
             }
         });
     }

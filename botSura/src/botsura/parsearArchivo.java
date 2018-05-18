@@ -31,7 +31,7 @@ public class parsearArchivo {
         content = new leerArchivo("base1.txt").getContentFile();
     
     }
-    
+    //AQUI ESTOY PRESENCIADO UN ERROR DE PRGRMACIOM
     public String[] parsingContent(){
         
         String[] parsing= content.split(",");
@@ -41,7 +41,7 @@ public class parsearArchivo {
         return parsing;
     }
     
-    
+    //EL MISMO ERROS SOLO FUNCIONA SI EL VALOR BUSCADO EN EL PRIMER DKA
     public int validarTrabajador(String[] parsing, String trabajador, String correo){
         int j=-1;
         for(int i=0;i<parsing.length;i=i+3){
