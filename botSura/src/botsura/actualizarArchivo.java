@@ -44,7 +44,7 @@ public class actualizarArchivo {
     }
     
     
-    
+    //METONODO PARA EL PARTE DE LOS TEMAS
     public void actualizar(int num, String Actualizar){
         leerArchivo act= new leerArchivo(archivo);
         act.lista.set(num, Actualizar);
