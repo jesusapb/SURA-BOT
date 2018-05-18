@@ -15,12 +15,12 @@ public class trabajadordos {
     String archivo;
     String nuevoContenido;
     leerArchivo act;
-    actualizarArchivo def;
+    ActualizarArchivo def;
     
     public trabajadordos(String archivo){
         this.archivo=archivo;
         act= new leerArchivo(archivo);
-        def= new actualizarArchivo(archivo);
+        def= new ActualizarArchivo(archivo);
     }
     
     

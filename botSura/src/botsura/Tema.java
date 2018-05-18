@@ -14,11 +14,11 @@ import java.util.Scanner;
  *
  * @author japb1
  */
-public class tema {
+public class Tema {
    String archivo;
    leerArchivo temas;
     
-   public tema(){
+   public Tema(){
         this.archivo="tema.txt";
         temas= new leerArchivo(this.archivo);     
     }     

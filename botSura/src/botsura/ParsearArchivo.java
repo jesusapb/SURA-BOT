@@ -17,12 +17,12 @@ import java.util.logging.Logger;
  *
  * @author japb1
  */
-public class parsearArchivo {
+public class ParsearArchivo {
     public ArrayList<String> baseDatos;
     String content;
     
     
-    public parsearArchivo(){
+    public ParsearArchivo(){
         this.baseDatos= new ArrayList<>();
 
     }
@@ -41,7 +41,7 @@ public class parsearArchivo {
         return parsing;
     }
     
-    //EL MISMO ERROS SOLO FUNCIONA SI EL VALOR BUSCADO EN EL PRIMER DKA
+    //EL MISMO ERROR SOLO FUNCIONA SI EL VALOR BUSCADO ESTA EN LA PRIMERA LINEA
     public int validarTrabajador(String[] parsing, String trabajador, String correo){
         int j=-1;
         for(int i=0;i<parsing.length;i=i+3){

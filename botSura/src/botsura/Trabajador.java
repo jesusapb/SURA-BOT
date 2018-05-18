@@ -5,13 +5,13 @@
  */
 package botsura;
 
-import vista.inicio;
+//import vista.inicio;
 
 /**
  *
  * @author japb1
  */
-public class trabajador {
+public class Trabajador {
     public String matricula;
     public String correo;
     public String archivo;
@@ -24,7 +24,7 @@ public class trabajador {
      * @param correo
      */
     
-    public trabajador(String matricula, String correo){
+    public Trabajador(String matricula, String correo){
         this.archivo="base1.txt";
         
         
@@ -56,11 +56,13 @@ public class trabajador {
     }
     
     
-    //concatenar la nueva matricula
-    //ete metodo es muy utlia que aqulo qw¿ ¿
-    public void actualizarTrabajador(String respuestas){
+    //concatenar la nueva matricula el correo 
+    //y el resultado del quiz para ser guardado en el archivo
+    //
+    public String actualizarTrabajador(String resultado){
        String content = "";
-       content+= matricula + "," + correo + "," + respuestas;
+       content= matricula + "," + correo + "," + resultado;
+     return content;
     }
     
     
@@ -68,7 +70,7 @@ public class trabajador {
    public boolean validarTrabajador(){
        boolean existe=false;
        int k;
-        parsearArchivo busc= new parsearArchivo();
+        ParsearArchivo busc= new ParsearArchivo();
       busc.getString();
       
       k=busc.validarTrabajador(busc.parsingContent(),"11", "facebook");
