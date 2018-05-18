@@ -22,6 +22,9 @@ public class Pregunta {
      
    }
     
+   
+    
+    
     
     public  void imprimir(){
         preguntas.imprimirlista();

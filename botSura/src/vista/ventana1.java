@@ -126,6 +126,12 @@ public class ventana1 extends javax.swing.JFrame {
         //la idea es modularizar esta parte del codigo para que cumpla el formato MVC  
         //usando un formato con mayor utilidad para que los botones sirvan
         
+        //este metodo formatea el cuadro de texto y deja
+        //a disponicion para que se llene de nuevo el cuadro de texto
+       // jTextArea1.setText(null);
+        
+        
+        
         File archivo = new File("temas.txt"); 
         try {
             //Leer texto
