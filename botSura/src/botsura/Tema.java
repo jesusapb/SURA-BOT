@@ -19,20 +19,22 @@ public class Tema {
    leerArchivo temas;
     
    public Tema(){
-        this.archivo="tema.txt";
+        this.archivo="temas.txt";
         temas= new leerArchivo(this.archivo);     
     }     
     
     
     
-    
-   /*     
-public void imprimirTema(){
-       for(int i=0;i<this.temas.size();i=i+2){
-        System.out.println(temas.get(i));
-        }
+    //crea la cadena que sera enviada a la vista extrayendola del modelo(archivo .txt)
+       
+public String imprimirTema(int i){
+       String cadena="";
+       cadena = temas.lista.get(i) + "\n" + temas.lista.get(i+1) + "\n";
+       //cadena por si el tema es mas grande
+       //cadena = temas.lista.get(i) + "\n" + temas.lista.get(i+1) + "\n" + temas.lista.get(i+2) + "\n" + temas.lista.get(i+3);
+       return cadena;
     }
-    
+   /* 
     //este medodo solo es para comprobar que lo vacie en un arreglo
     public void imprimirContenido(){
         for(int i=0;i<this.temas.size();i=i+2){

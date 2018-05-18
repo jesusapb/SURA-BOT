@@ -22,6 +22,19 @@ public class Pregunta {
      
    }
     
+   public String optenerpregunta(int i){
+       String cadena="";
+       // para dos lineas
+       //cadena= preguntas.lista.get(i) + "\n"+ preguntas.lista.get(i+1)+"\n";
+       // para tres lineas donde es una pregunta y sus respuesta de opcion multiple
+       cadena= preguntas.lista.get(i) + "\n"+ preguntas.lista.get(i+1)+"\n"+ preguntas.lista.get(i+2) +"\n" + preguntas.lista.get(i+3);
+       
+       
+       
+       return cadena;
+   }
+    
+    
     
     public  void imprimir(){
         preguntas.imprimirlista();

@@ -20,10 +20,15 @@ public class BotSura {
      
      //trabajador emp= new trabajador("hola","111");
       //emp.imprimir();
-      ParsearArchivo busc= new ParsearArchivo();
-      busc.getString();
+      //ParsearArchivo busc= new ParsearArchivo();
+     // busc.getString();
       
-      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
+      //System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
+      Pregunta consulta= new Pregunta();
+      System.out.println(consulta.optenerpregunta(0));
+      
+      Tema temit = new Tema();
+     System.out.println(temit.imprimirTema(0));
       
       
     }
