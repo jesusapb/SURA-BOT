@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 hola
 gato
 perro
+=======
+OBLIGACIONES DE UN TRABAJADOR
+SAR
+CUENTA INDIVIDUAL
+>>>>>>> master
