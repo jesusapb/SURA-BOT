@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package botsura;
 
 import java.util.Arrays;
+import vista.inicio;
 
 /**
  *
@@ -20,17 +16,18 @@ public class BotSura {
      
      //trabajador emp= new trabajador("hola","111");
       //emp.imprimir();
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
       //ParsearArchivo busc= new ParsearArchivo();
      // busc.getString();
-      
+      inicio window = new inicio(); 
+      window.setVisible(true);
       //System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
       Pregunta consulta= new Pregunta();
       System.out.println(consulta.optenerpregunta(0));
       
       Tema temit = new Tema();
      System.out.println(temit.imprimirTema(0));
-=======
+//=======
      ParsearArchivo busc= new ParsearArchivo();
      busc.getString();
       
@@ -42,7 +39,7 @@ public class BotSura {
       
       //Tema temit = new Tema();
      //System.out.println(temit.imprimirTema(0));
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
       
       
     }

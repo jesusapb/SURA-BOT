@@ -122,7 +122,7 @@ public class inicio extends javax.swing.JFrame {
         //si es el caso se abrira la segunda ventana 
         
         
-        
+        setVisible(false);
        //si la se segenera un numero que sea distinto de -1 se abrira la segunda ventana;
         ventana1 abrir = new ventana1();
         abrir.setVisible(true);
@@ -157,6 +157,7 @@ public class inicio extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
