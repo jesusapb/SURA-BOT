@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
 hola
@@ -23,6 +24,8 @@ sol
 	a)Afore 	b)CONSAR	c)SAR
 >>>>>>> master
 =======
+=======
+>>>>>>> master
 			QUIZ 1
 
 1. ¿Cúal de las siguientes entidades NO participa en el SAR?
@@ -49,4 +52,7 @@ b) Sociedades especializadas en fondos para el retiro*
 Seguro Social, que prevén que las Aportaciones de los trabajadores, patrones y del
  Estado sean manejadas a través de Cuentas Individuales propiedad de los trabajadores.
 	a)Afore 	b)CONSAR	c)SAR
+<<<<<<< HEAD
 >>>>>>> interfaz
+=======
+>>>>>>> master

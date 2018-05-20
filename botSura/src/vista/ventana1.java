@@ -122,17 +122,23 @@ public class ventana1 extends javax.swing.JFrame {
         
         //este metodo formatea el cuadro de texto y deja
         //a disponicion para que se llene de nuevo el cuadro de texto
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 
        // jTextArea1.setText(null)
        jTextArea1.setText(null);
 =======
+=======
+>>>>>>> master
 //<<<<<<< Updated upstream
        // jTextArea1.setText(null);
 //=======
        jTextArea1.setText(null);
 //>>>>>>> Stashed changes
+<<<<<<< HEAD
 >>>>>>> interfaz
+=======
+>>>>>>> master
         
         
         

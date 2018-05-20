@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
 hola
@@ -9,6 +10,8 @@ SAR
 CUENTA INDIVIDUAL
 >>>>>>> master
 =======
+=======
+>>>>>>> master
 ===================================
 Tema: Obligaciones de las Afores
 
@@ -191,4 +194,7 @@ tu patrón ha realizado a partir del 1ro
 de julio 1997.
 
 ===================================
+<<<<<<< HEAD
 >>>>>>> interfaz
+=======
+>>>>>>> master
