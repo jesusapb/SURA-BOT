@@ -14,37 +14,16 @@ public class BotSura {
      */
     public static void main(String[] args) {
      
-<<<<<<< refs/remotes/origin/master
 
-=======
-     //trabajador emp= new trabajador("hola","111");
-      //emp.imprimir();
-//<<<<<<< Updated upstream
-      //ParsearArchivo busc= new ParsearArchivo();
-     // busc.getString();
-      inicio window = new inicio(); 
-      window.setVisible(true);
-      //System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
-      Pregunta consulta= new Pregunta();
-      System.out.println(consulta.optenerpregunta(0));
-      
-      Tema temit = new Tema();
-     System.out.println(temit.imprimirTema(0));
-//=======
+
      ParsearArchivo busc= new ParsearArchivo();
      busc.getString();
       
-      System.out.println(busc.validarTrabajador(busc.parsingContent(),"444", "twitter"));
-     
-
-      // Pregunta consulta= new Pregunta();
-      //System.out.println(consulta.optenerpregunta(0));
-      
-      //Tema temit = new Tema();
-     //System.out.println(temit.imprimirTema(0));
-//>>>>>>> Stashed changes
-      
->>>>>>> interfaz
+      System.out.println(busc.validarTrabajador(busc.parsingContent(),"111", "facebook"));
+      int valor;
+      leerArchivo buscar= new leerArchivo("base1.txt");
+      valor=buscar.buscarTrabajador("113","perro");
+      System.out.println(valor);
       
     }
     

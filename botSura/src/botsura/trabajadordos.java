@@ -24,9 +24,9 @@ public class trabajadordos {
     }
     
     
-    public void imprimir(){
-        act.imprimirlista();
-    }
+    //public void imprimir(){
+      //  act.imprimirlista();
+    //}
     
     public void actualizar(String texto){
         //leerArchivo act= new leerArchivo(archivo);

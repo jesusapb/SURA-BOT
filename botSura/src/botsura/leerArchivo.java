@@ -54,27 +54,18 @@ public class leerArchivo {
       public int getlistaCounter() {
         return lista.size();
     }
-    
 
-    //este medodo solo es para comprobar que lo vacie en un arreglo
-    public void imprimirlista(){
-        for(int i=0;i<this.lista.size();i++){
-            System.out.println(lista.get(i));
-        }
-    }
-    
-    //este medodo solo es para comprobar que lo vacie en un arreglo
-    public void imprimirlistados(){
-       for(int i=0;i<this.lista.size();i=1+3){
-        System.out.println(lista.get(i));
-        }
-    }
     
     public String getContentFile(){
      String content = "";
      int i;
+     //while(file.hasNext()){
+       //  content+=file.nextLine()+ "\n";
+     //}
+     
+     
      for(i=0;i<lista.size();i++){
-         content+=lista.get(i)+"\n"; 
+       content+=lista.get(i)+"\n"; 
      }
      file.close();
      
@@ -83,12 +74,6 @@ public class leerArchivo {
     }
     
     //este medodo solo es para comprobar que lo vacie en un arreglo
-    public void imprimirOpciones(){
-        for(int i=0;i<this.lista.size();i=1+3){
-        System.out.println(lista.get(i+1));
-        System.out.println(lista.get(i+2));
-        }
-    }
     
     //actualizar el archivo
      public void ActualizarArchivo(int linea, String Actualizacion){
@@ -117,6 +102,17 @@ public class leerArchivo {
               e2.printStackTrace();
            }
     }
+    }
+    
+    public int buscarTrabajador(String matricula, String contra){
+       int k=-1;
+       for(int i=0;i<lista.size();i++){
+           String[] buscar=lista.get(i).split(",");
+          if(buscar[0].equals(matricula) && buscar[1].equals(contra)){
+              k=i;
+          }
+       }
+       return k;
     }
     
     
