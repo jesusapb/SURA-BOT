@@ -36,8 +36,8 @@ public class Pregunta {
     
     
     
-    public  void imprimir(){
-        preguntas.imprimirlista();
-    } 
+    //public  void imprimir(){
+      //  preguntas.imprimirlista();
+    //} 
     
 }

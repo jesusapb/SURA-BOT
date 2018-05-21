@@ -39,9 +39,10 @@ public class Trabajador {
         
     }    
         
-    public  void imprimir(){
-        trabajadores.imprimirlista();
-    } 
+   // public  void imprimir(){
+   
+     //   trabajadores.imprimirlista();
+    //} 
     
     
     public boolean identificarse(){
@@ -73,7 +74,7 @@ public class Trabajador {
         ParsearArchivo busc= new ParsearArchivo();
       busc.getString();
       
-      k=busc.validarTrabajador(busc.parsingContent(),"11", "facebook");
+      k=busc.validarTrabajador(busc.parsingContent(),"111", "facebook");
       if(k!=-1){
           existe=true;
       }
