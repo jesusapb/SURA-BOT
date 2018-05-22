@@ -55,7 +55,8 @@ public class leerArchivo {
         return lista.size();
     }
 
-    
+    //metodo inecesario despues econtar al trabajador por el metodo aqui existente
+      //sera borrado
     public String getContentFile(){
      String content = "";
      int i;
@@ -103,7 +104,7 @@ public class leerArchivo {
            }
     }
     }
-    
+    //en la forma en la que se creo el metodo permite añadir mas informacion ademas de la contraseña y matricula
     public int buscarTrabajador(String matricula, String contra){
        int k=-1;
        for(int i=0;i<lista.size();i++){

@@ -60,7 +60,7 @@ public class Trabajador {
     //concatenar la nueva matricula el correo 
     //y el resultado del quiz para ser guardado en el archivo
     //
-    public String actualizarTrabajador(String resultado){
+    public String cadenaActualizacion(String resultado){
        String content = "";
        content= matricula + "," + correo + "," + resultado;
      return content;
