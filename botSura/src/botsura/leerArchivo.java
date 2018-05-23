@@ -56,25 +56,6 @@ public class leerArchivo {
     }
 
     
-    public String getContentFile(){
-     String content = "";
-     int i;
-     //while(file.hasNext()){
-       //  content+=file.nextLine()+ "\n";
-     //}
-     
-     
-     for(i=0;i<lista.size();i++){
-       content+=lista.get(i)+"\n"; 
-     }
-     file.close();
-     
-    //System.out.println(content);
-    return content;
-    }
-    
-    //este medodo solo es para comprobar que lo vacie en un arreglo
-    
     //actualizar el archivo
      public void ActualizarArchivo(int linea, String Actualizacion){
        FileWriter fichero = null;
@@ -84,12 +65,12 @@ public class leerArchivo {
             fichero = new FileWriter("base1.txt");
             pw = new PrintWriter(fichero);
                 lista.set(linea, Actualizacion);
-            for (int i = 0; i < lista.size(); i++)
+            for (int i = 0; i < lista.size(); i++){
                // if(i!=linea){
               pw.println(lista.get(i));
                 //}else{
                   //  pw.println(Actualizacion +"\n");
-                //} 
+            }     //} 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -103,7 +84,7 @@ public class leerArchivo {
            }
     }
     }
-    
+    //en la forma en la que se creo el metodo permite añadir mas informacion ademas de la contraseña y matricula
     public int buscarTrabajador(String matricula, String contra){
        int k=-1;
        for(int i=0;i<lista.size();i++){

@@ -39,60 +39,69 @@ public class Trabajador {
         
     }    
         
-   // public  void imprimir(){
    
-     //   trabajadores.imprimirlista();
-    //} 
-    
-    
-    public boolean identificarse(){
-       boolean existe=false;
-       int i = 0;
-       
-       if(i!=-1){
-           existe=true;
-       }
-       
-        return existe;
+    public int buscarTrabajador(){
+        int i;
+        i=trabajadores.buscarTrabajador(this.matricula, this.correo);
+        
+        return i;
     }
+    
     
     
     //concatenar la nueva matricula el correo 
     //y el resultado del quiz para ser guardado en el archivo
     //
-    public String actualizarTrabajador(String resultado){
+    public String cadenaActualizacion(String resultado){
        String content = "";
        content= matricula + "," + correo + "," + resultado;
      return content;
     }
+
+    public  void actualizarArchivo(String resultado){
+        int i;
+        i=this.buscarTrabajador();
+        String cadena="";
+        trabajadores.ActualizarArchivo(i,this.cadenaActualizacion(resultado));
+    }
+    
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getArchivo() {
+        return archivo;
+    }
+
+    public void setArchivo(String archivo) {
+        this.archivo = archivo;
+    }
+
+    public leerArchivo getTrabajadores() {
+        return trabajadores;
+    }
+
+    public void setTrabajadores(leerArchivo trabajadores) {
+        this.trabajadores = trabajadores;
+    }
     
     
     
-   public boolean validarTrabajador(){
-       boolean existe=false;
-       int k;
-        ParsearArchivo busc= new ParsearArchivo();
-      busc.getString();
-      
-      k=busc.validarTrabajador(busc.parsingContent(),"111", "facebook");
-      if(k!=-1){
-          existe=true;
-      }
-       return existe;
-   }
+ 
+    
    
-    
-    public String getMatricula(){
-        return matricula;
-    }
-    
-    public String setMatricula(){
-        return matricula;
-    }
-    
-    public String getCorreo(){
-        return this.correo;
-    }
-    
+   
 
 }
