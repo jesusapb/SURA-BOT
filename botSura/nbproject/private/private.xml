@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/controlador/trabajador.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/botsura/ParsearArchivo.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/controlador/ControladorTrabajador.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/vista/inicio.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/botsura/BotSura.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/botsura/leerArchivo.java</file>
+            <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/botsura/Trabajador.java</file>
             <file>file:/C:/Users/japb1/Desktop/git-hub/SURA-BOT/botSura/src/vista/ventana3.java</file>
         </group>
     </open-files>

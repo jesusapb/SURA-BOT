@@ -28,7 +28,7 @@ public class ParsearArchivo {
     }
     
     public void getString(){
-        content = new leerArchivo("base1.txt").getContentFile();
+       // content = new leerArchivo("base1.txt").getContentFile();
     
     }
     //AQUI ESTOY PRESENCIADO UN ERROR DE PRGRMACIOM
