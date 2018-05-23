@@ -18,6 +18,11 @@ public class BotSura {
       leerArchivo buscar= new leerArchivo("base1.txt");
       valor=buscar.buscarTrabajador("113","perro");
       System.out.println(valor);
+      Trabajador busc= new Trabajador("111","facebook");
+        int buscarTrabajador = busc.buscarTrabajador();
+      
+      busc.actualizarArchivo("aprobado");
+      
       
     }
     

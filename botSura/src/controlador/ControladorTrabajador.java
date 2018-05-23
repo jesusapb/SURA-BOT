@@ -19,6 +19,11 @@ public class ControladorTrabajador implements ActionListener{
     public void actionPerformed(ActionEvent ae) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    //complueba si existe el trabajador
+    //aqui se implementara la busqueda si existe el trabajador
+  
     
+    
+    
+    
+    //aqui se implentara la actualizacion del archivo
 }

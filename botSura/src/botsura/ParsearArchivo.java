@@ -14,7 +14,8 @@ import java.util.logging.Logger;
 
 
 /**
- *
+ * esta clase ya resulta incesaria hay que borrarla en futuras actualizaciones la funcion para
+ * la que estaba diseñada ya no es nesesia implementarla aqui
  * @author japb1
  */
 public class ParsearArchivo {
