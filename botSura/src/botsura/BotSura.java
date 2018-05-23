@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package botsura;
+
+import java.util.Arrays;
+import vista.inicio;
 
 /**
  *
@@ -15,12 +13,17 @@ public class BotSura {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        preguntas consul= new preguntas("quiz1.txt");
-        consul.imprimirArreglo();
-        consul.imprimirPreguntas();
-        
-        
+    
+      int valor;
+      leerArchivo buscar= new leerArchivo("base1.txt");
+      valor=buscar.buscarTrabajador("113","perro");
+      System.out.println(valor);
+      Trabajador busc= new Trabajador("111","facebook");
+        int buscarTrabajador = busc.buscarTrabajador();
+      
+      busc.actualizarArchivo("aprobado");
+      
+      
     }
     
 }

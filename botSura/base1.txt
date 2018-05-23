@@ -1,0 +1,3 @@
+111,facebook,aprobado
+444,twitter,76
+113,perro,45
