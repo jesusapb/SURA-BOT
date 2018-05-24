@@ -22,3 +22,14 @@ Matrícula: 444
 Correo: twitter
 Calificación: 0
 No haz sido reclutado
+
+Matrícula: 
+Correo: 
+
+Matrícula: 111
+Correo: jessica
+
+Matrícula: 111
+Correo: jessica
+Calificación: 40
+No haz sido reclutado
