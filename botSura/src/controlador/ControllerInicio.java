@@ -55,5 +55,5 @@ public class ControllerInicio implements ActionListener{
             abrir.setVisible(true);
         }
       }
-
-
+    }
+}

@@ -33,3 +33,8 @@ Matrícula: 111
 Correo: jessica
 Calificación: 40
 No haz sido reclutado
+
+Matrícula: 111
+Correo: jessica
+Calificación: 60
+No haz sido reclutado
