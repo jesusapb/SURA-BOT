@@ -41,7 +41,7 @@ public class ControllerInicio implements ActionListener{
     public void actionPerformed(ActionEvent e) {
        Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText()); 
       int valor;
-<<<<<<< HEAD
+
       if(e.getSource()== view.Trabajador){
         valor=t.buscarTrabajador();
         if(valor>=0){
@@ -50,22 +50,11 @@ public class ControllerInicio implements ActionListener{
             abrir.setVisible(true);
         }
         else{
+            
             view.setTitle("Matricula incompleta");
             
             inicio abrir= new inicio();
             abrir.setVisible(true);
-=======
-      if(e.getSource()== view.Trabajador){ //si se realiza el evento con ese botón, entonces
-        valor=t.buscarTrabajador(); //Devuelve -1 si no se escontro el trabajador.
-        if(valor>=0){ //pasa a la siguinte ventana
-        ventana1 abrir = new ventana1();
-        abrir.setVisible(true);
-        }
-        else{ //Se queda para pedir la matricula una vez más
-        view.setTitle("Matricula incompleta");
-        inicio abrir= new inicio();
-        abrir.setVisible(true);
->>>>>>> master
         }
       }
     }
