@@ -179,7 +179,7 @@ public class Pregunta4 extends javax.swing.JFrame {
        // y matricula y agregandole lo que se haga guardado en calificacacion
         
        // luego se procesara lo siguiente 
-        ventana3 abrir= new ventana3();
+        Resultado abrir= new Resultado();
      abrir.setVisible(true);
         //se cierra la ventana para que todo pase en la nueva ventana oculto solo para trabajar
        // this.dispose(); 

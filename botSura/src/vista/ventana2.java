@@ -21,6 +21,7 @@ public class ventana2 extends javax.swing.JFrame {
     /** Creates new form ventana2 */
     public ventana2() {
         initComponents();
+        setLocationRelativeTo(null);
     }
     
     //esta variable se creo par que sirva como indice para la impresion en pantalla de las preguntas y repuestas
@@ -92,7 +93,7 @@ public class ventana2 extends javax.swing.JFrame {
         buttonGroup1.add(opcC);
         opcC.setText("C");
 
-        jLabel2.setText("ï¿½Cuï¿½l de las siguientes entidades NO pertencen al SAR?");
+        jLabel2.setText("¿Cuál de las siguientes entidades NO pertencen al SAR?");
 
         jLabel4.setText("A.SIEFORES ");
 
@@ -122,7 +123,7 @@ public class ventana2 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -132,7 +133,7 @@ public class ventana2 extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(opcC)
                                     .addComponent(opcB))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addContainerGap(102, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(80, 80, 80))))
@@ -177,7 +178,7 @@ public class ventana2 extends javax.swing.JFrame {
        // y matricula y agregandole lo que se haga guardado en calificacacion
         
        // luego se procesara lo siguiente 
-        ventana3 abrir= new ventana3();
+        Resultado abrir= new Resultado();
         abrir.setVisible(true);
         //se cierra la ventana para que todo pase en la nueva ventana oculto solo para trabajar
        // this.dispose(); 

@@ -38,16 +38,19 @@ public class Trabajador {
         
         
     }    
-        
+
+   public Trabajador() {
+   }
+  
    
     public int buscarTrabajador(){
         int i;
         i=trabajadores.buscarTrabajador(this.matricula, this.correo);
-        if(i>=0){
+       /* if(i>=0){
             System.out.println("el valor de la linea buscada es: " + i);
         }else{
             System.out.println("no pudo se econtrado  asi que devuelve: " + i);
-        }
+        }**/
   
         return i;
     }

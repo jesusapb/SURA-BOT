@@ -165,7 +165,7 @@ public class Pregunta5 extends javax.swing.JFrame {
        }
        System.out.println("Puntos actuales: "+Puntos.puntosUsuario);
        setVisible(false);
-        Resultados abrir= new Resultados();
+        Resultado abrir= new Resultado();
         abrir.setVisible(true);
         //se cierra la ventana para que todo pase en la nueva ventana oculto solo para trabajar
        // this.dispose(); 

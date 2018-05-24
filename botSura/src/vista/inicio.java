@@ -36,7 +36,7 @@ public class inicio extends javax.swing.JFrame {
 
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        Trabajador = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         correo = new javax.swing.JTextPane();
@@ -52,10 +52,10 @@ public class inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("inicio");
 
-        jButton1.setText("guardar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Trabajador.setText("guardar");
+        Trabajador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                TrabajadorActionPerformed(evt);
             }
         });
 
@@ -86,7 +86,7 @@ public class inicio extends javax.swing.JFrame {
                             .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1)
+                            .addComponent(Trabajador)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                             .addComponent(jScrollPane2))))
                 .addContainerGap(130, Short.MAX_VALUE))
@@ -107,30 +107,39 @@ public class inicio extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(26, 26, 26)
-                .addComponent(jButton1)
+                .addComponent(Trabajador)
                 .addContainerGap(136, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void TrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TrabajadorActionPerformed
         // TODO add your handling code here:
         
         //se tomaran los valores de la ventana y se invocara al la clase 
         //trabajador en ellos se buscara si existe o no el trabajador y 
         //si es el caso se abrira la segunda ventana 
-        
-        
-        setVisible(false);
-       //si la se segenera un numero que sea distinto de -1 se abrira la segunda ventana;
+        /*int i=-1;
+       if( i>=0){
         ventana1 abrir = new ventana1();
         abrir.setVisible(true);
+        }
+        else{
+        inicio abrir= new inicio();
+        abrir.setVisible(true);
+        abrir.dispose();
+        setTitle("Matricula incompleta");
+        }*/
+        setVisible(false);
+       //si la se segenera un numero que sea distinto de -1 se abrira la segunda ventana;
+        //ventana1 abrir = new ventana1();
+        setVisible(true);
         
         
         //se cierra la ventana para que todo pase en la nueva ventana oculto solo para trabajar
-       // this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_TrabajadorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,8 +180,8 @@ public class inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTextPane correo;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton Trabajador;
+    public javax.swing.JTextPane correo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -180,6 +189,6 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
-    public static javax.swing.JTextPane matricula;
+    public javax.swing.JTextPane matricula;
     // End of variables declaration//GEN-END:variables
 }
