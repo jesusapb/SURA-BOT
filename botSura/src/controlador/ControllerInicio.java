@@ -18,36 +18,36 @@ import vista.ventana1;
  * @author japb1
  */
 public class ControllerInicio implements ActionListener{
-        //LA VISTA
+        
+     //LA VISTA
     private inicio view;
     // EL MODELO
-    
     private Trabajador model;
-    private leerArchivo LE;
     
+        //creamos el contructor de la clase con la vista y el modelo
     public ControllerInicio(inicio view,Trabajador model){
         this.model =model;
         this.view = view;
-        this.view.Trabajador.addActionListener(this);
+        this.view.Trabajador.addActionListener(this); //acción del botón.
     }
-    
+        //método para iniciar la vista
     public void inciar(){
-        view.setTitle("Inicio");
-        view.setLocationRelativeTo(null);
+        view.setTitle("Inicio"); //titulo
+        view.setLocationRelativeTo(null); //posicion.
         view.setVisible(true);
     }
     
-    @Override
+    @Override  //función que realiza el botón
     public void actionPerformed(ActionEvent e) {
-       Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText());
+       Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText()); 
       int valor;
-      if(e.getSource()== view.Trabajador){
-        valor=t.buscarTrabajador();
-        if(valor>=0){
+      if(e.getSource()== view.Trabajador){ //si se realiza el evento con ese botón, entonces
+        valor=t.buscarTrabajador(); //Devuelve -1 si no se escontro el trabajador.
+        if(valor>=0){ //pasa a la siguinte ventana
         ventana1 abrir = new ventana1();
         abrir.setVisible(true);
         }
-        else{
+        else{ //Se queda para pedir la matricula una vez más
         view.setTitle("Matricula incompleta");
         inicio abrir= new inicio();
         abrir.setVisible(true);
@@ -55,14 +55,6 @@ public class ControllerInicio implements ActionListener{
       }
     }
 
-
-    //aqui se implementara la busqueda si existe el trabajador
-    
-  
-    
-    
-    
-    //aqui se implentara la actualizacion del archivo
 
 
 }
