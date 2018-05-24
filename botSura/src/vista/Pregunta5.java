@@ -21,6 +21,7 @@ public class Pregunta5 extends javax.swing.JFrame {
     /** Creates new form ventana2 */
     public Pregunta5() {
         initComponents();
+        setLocationRelativeTo(null);
     }
     
     //esta variable se creo par que sirva como indice para la impresion en pantalla de las preguntas y repuestas
@@ -84,13 +85,13 @@ public class Pregunta5 extends javax.swing.JFrame {
         buttonGroup1.add(opcC);
         opcC.setText("C");
 
-        jLabel2.setText("ï¿½Cï¿½al es el significado de la siguiente sigla: SIEFORES?");
+        jLabel2.setText("¿Cual es el significado de la siguiente sigla: SIEFORES?");
 
         jLabel3.setText("C. Sistema Interbancario del Estado Federal Organizado en Servicios");
 
         jLabel4.setText("B. Sociedades Especializadas en Fondis para el Retiro  ");
 
-        jLabel5.setText("A.Sistema Internacional enfocado en la Formaciï¿½n y Orienaciï¿½n del Estado");
+        jLabel5.setText("A.Sistema Internacional enfocado en la Formacion y Orienacion del Estado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,27 +101,27 @@ public class Pregunta5 extends javax.swing.JFrame {
                 .addGap(97, 97, 97)
                 .addComponent(jLabel2)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3))
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(opcC)
+                    .addComponent(opcB)
+                    .addComponent(opcA))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(197, 197, 197))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
-                        .addGap(32, 32, 32)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(opcC)
-                            .addComponent(opcB)
-                            .addComponent(opcA)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(197, 197, 197))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(205, 205, 205))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

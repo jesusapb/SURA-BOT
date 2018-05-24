@@ -44,13 +44,15 @@ public class ControllerInicio implements ActionListener{
       if(e.getSource()== view.Trabajador){
         valor=t.buscarTrabajador();
         if(valor>=0){
-        ventana1 abrir = new ventana1();
-        abrir.setVisible(true);
+            
+            ventana1 abrir = new ventana1();
+            abrir.setVisible(true);
         }
         else{
-        view.setTitle("Matricula incompleta");
-        inicio abrir= new inicio();
-        abrir.setVisible(true);
+            view.setTitle("Matricula incompleta");
+            
+            inicio abrir= new inicio();
+            abrir.setVisible(true);
         }
       }
     }

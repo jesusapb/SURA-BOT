@@ -16,6 +16,7 @@ public class inicio extends javax.swing.JFrame {
      */
     public inicio() {
         initComponents();
+        setLocationRelativeTo(null);
     }
             //
             //crear tres variables para enviar el dato a la ventana del quiz donde se guardaran el nombre el correo y el numero de linea
