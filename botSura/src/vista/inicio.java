@@ -5,6 +5,14 @@
  */
 package vista;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author japb1
@@ -87,9 +95,11 @@ public class inicio extends javax.swing.JFrame {
                             .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Trabajador)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                            .addComponent(jScrollPane2))))
+                            .addComponent(jScrollPane2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(Trabajador)))))
                 .addContainerGap(130, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -107,17 +117,36 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(Trabajador)
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void TrabajadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TrabajadorActionPerformed
-        // TODO add your handling code here:
-        
+        try {
+            // TODO add your handling code here:
+           File trabajador = new File("datos.txt");
+            
+            FileWriter escribir = new FileWriter(trabajador, true); //en donde vamos a guardar 
+           
+            String texto = matricula.getText();
+            String cor =  correo.getText();
+            PrintWriter imprime = new PrintWriter(escribir); //escribe en la direccion dada
+           
+           imprime.append("\r\n");
+            imprime.append("Matrícula: ");
+            imprime.print(texto); 
+            imprime.append("\r\n");
+            imprime.append("Correo: ");
+            imprime.print(cor);
+            imprime.append("\r\n");
+            escribir.close();
+        } catch (Exception ex) {
+            Logger.getLogger(inicio.class.getName()).log(Level.SEVERE, null, ex);
+        }
         //se tomaran los valores de la ventana y se invocara al la clase 
         //trabajador en ellos se buscara si existe o no el trabajador y 
         //si es el caso se abrira la segunda ventana 

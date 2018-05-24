@@ -1,4 +1,4 @@
-111,jessica,aprobado
-444,twitter,76
-113,perro,45
-1,jes,111
+111,jessica
+444,twitter
+113,perro
+1,jes
