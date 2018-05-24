@@ -37,7 +37,7 @@ public class ControllerInicio implements ActionListener{
         view.setVisible(true);
     }
     
-    @Override  //función que realiza el botón
+    @Override  //funci�n que realiza el bot�n
     public void actionPerformed(ActionEvent e) {
        Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText()); 
       int valor;
@@ -45,20 +45,15 @@ public class ControllerInicio implements ActionListener{
       if(e.getSource()== view.Trabajador){
         valor=t.buscarTrabajador();
         if(valor>=0){
-            
             ventana1 abrir = new ventana1();
             abrir.setVisible(true);
         }
         else{
             
             view.setTitle("Matricula incompleta");
-            
             inicio abrir= new inicio();
             abrir.setVisible(true);
         }
       }
-    }
 
 
-
-}
