@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package botsura;
 
 import java.util.ArrayList;
@@ -32,7 +28,6 @@ public class ParsearArchivo {
        // content = new leerArchivo("base1.txt").getContentFile();
     
     }
-    //AQUI ESTOY PRESENCIADO UN ERROR DE PRGRMACIOM
     public String[] parsingContent(){
         
         String[] parsing= content.split(",");
@@ -42,7 +37,6 @@ public class ParsearArchivo {
         return parsing;
     }
     
-    //EL MISMO ERROR SOLO FUNCIONA SI EL VALOR BUSCADO ESTA EN LA PRIMERA LINEA
     public int validarTrabajador(String[] parsing, String trabajador, String correo){
         int j=-1;
         for(int i=0;i<parsing.length;i=i+3){

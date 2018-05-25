@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package botsura;
 
-//import vista.inicio;
 
 /**
  *
@@ -30,9 +25,7 @@ public class Trabajador {
         
         this.matricula = matricula;
         
-        // this.matricula = inicio.matricula.getText();
          this.correo=correo;
-        // this.correo= inicio.correo.getText();
         
         trabajadores= new leerArchivo(archivo);
         
@@ -46,12 +39,7 @@ public class Trabajador {
     public int buscarTrabajador(){
         int i;
         i=trabajadores.buscarTrabajador(this.matricula, this.correo);
-       /* if(i>=0){
-            System.out.println("el valor de la linea buscada es: " + i);
-        }else{
-            System.out.println("no pudo se econtrado  asi que devuelve: " + i);
-        }**/
-  
+       
         return i;
     }
     
