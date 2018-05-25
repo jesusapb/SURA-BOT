@@ -1,6 +1,6 @@
 package vista;
 
-/* * @author NOE
+/* * @author Jessica
  */
 //Aqui se ponen los puntos del quiz 
 public class Puntos {

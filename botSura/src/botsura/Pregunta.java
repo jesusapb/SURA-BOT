@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package botsura;
 
 
@@ -11,7 +7,6 @@ package botsura;
  * @author japb1
  */
 public class Pregunta {
-//   public ArrayList<String> cuestionario;
    String archivo;
    leerArchivo preguntas;
    
@@ -33,11 +28,5 @@ public class Pregunta {
        
        return cadena;
    }
-    
-    
-    
-    //public  void imprimir(){
-      //  preguntas.imprimirlista();
-    //} 
-    
+     
 }

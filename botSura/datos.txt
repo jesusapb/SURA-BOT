@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 111,jessica,0
 
@@ -38,3 +40,4 @@ Matrícula: 111
 Correo: jessica
 Calificación: 60
 No haz sido reclutado
+>>>>>>> master

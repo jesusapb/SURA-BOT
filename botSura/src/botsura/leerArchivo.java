@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package botsura;
 
 import java.io.File;
@@ -27,13 +22,11 @@ public class leerArchivo {
     try {
             file = new Scanner(new File(archivo));
         } catch (FileNotFoundException ex) {
-           // Logger.getLogger(FileReader.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
         }
     while (file.hasNextLine()){
          lista.add(file.nextLine());
         }
-       //file.close();
     }
     
     
@@ -66,11 +59,9 @@ public class leerArchivo {
             pw = new PrintWriter(fichero);
                 lista.set(linea, Actualizacion);
             for (int i = 0; i < lista.size(); i++){
-               // if(i!=linea){
               pw.println(lista.get(i));
-                //}else{
-                  //  pw.println(Actualizacion +"\n");
-            }     //} 
+               
+            }    
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
