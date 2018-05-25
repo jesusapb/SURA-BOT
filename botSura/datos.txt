@@ -1,43 +1,10 @@
-<<<<<<< HEAD
-=======
 
-111,jessica,0
-
-444,twitter,0
-Matrícula: 111,
-Correo: jessica,
-0
 Matrícula: 111
-Correo: jessica 
-Matrícula: 111
-Correo: jessica
-Matrícula: 111
-Correo: jessica 
-Matrícula: 111
-Correo: 
-Matrícula: 111
-Correo: jessica
+Correo: jessicasarai
 Calificación: 0
-No haz sido reclutado
+No haz sido aprobado
 
-Matrícula: 444
-Correo: twitter
+Matrícula: 111
+Correo: jessicasarai
 Calificación: 0
-No haz sido reclutado
-
-Matrícula: 
-Correo: 
-
-Matrícula: 111
-Correo: jessica
-
-Matrícula: 111
-Correo: jessica
-Calificación: 40
-No haz sido reclutado
-
-Matrícula: 111
-Correo: jessica
-Calificación: 60
-No haz sido reclutado
->>>>>>> master
+No haz sido aprobado

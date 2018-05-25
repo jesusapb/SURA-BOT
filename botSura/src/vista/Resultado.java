@@ -153,10 +153,10 @@ public class Resultado extends javax.swing.JFrame {
             imprime.print(cal);
             imprime.append("\r\n");
             if(cal < 80){
-                imprime.append("No haz sido reclutado");
+                imprime.append("No haz sido aprobado");
             }
             else{
-                imprime.append("Haz sido reclutado");
+                imprime.append("Haz sido aprobado");
             }
             
             imprime.append("\r\n");
