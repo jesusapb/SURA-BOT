@@ -3,8 +3,3 @@ Matrícula: 111
 Correo: jessicasarai
 Calificación: 0
 No haz sido aprobado
-
-Matrícula: 111
-Correo: jessicasarai
-Calificación: 0
-No haz sido aprobado

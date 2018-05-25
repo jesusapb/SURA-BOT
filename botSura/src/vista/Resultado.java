@@ -181,10 +181,10 @@ public class Resultado extends javax.swing.JFrame {
         int cal = Puntos.puntosUsuario;
         calif.setText(String.valueOf(cal));
         if(80 > cal){
-            res.setText("No haz sido reclutado.");
+            res.setText("No haz sido aprobado.");
         } 
         else{
-            res.setText("Haz sido reclutado");
+            res.setText("Haz sido aprobado");
         }
         
         
