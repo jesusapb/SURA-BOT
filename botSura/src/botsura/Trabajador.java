@@ -11,14 +11,12 @@ public class Trabajador {
     public String correo;
     public String archivo;
     leerArchivo trabajadores;
-    //public ArrayList<String> listaMat;
-    //Scanner file;
     /**
      *
      * @param matricula
      * @param correo
      */
-    
+    //contructor con 2 parametros
     public Trabajador(String matricula, String correo){
         this.archivo="base1.txt";
         
@@ -31,15 +29,15 @@ public class Trabajador {
         
         
     }    
-
+    //contructor por defecto
    public Trabajador() {
    }
   
-   
+    //Se busca el trabajador dentro del archivo, a traves de la clase leerArchivo y devolviendo en que
+   //línea se encuentra el trabajador.
     public int buscarTrabajador(){
         int i;
         i=trabajadores.buscarTrabajador(this.matricula, this.correo);
-       
         return i;
     }
     
@@ -53,7 +51,7 @@ public class Trabajador {
        content= matricula + "," + correo + "," + resultado;
      return content;
     }
-
+    //Actualización y verificacion invocando a buscarTrabajador.
     public  void actualizarArchivo(String resultado){
         int i;
         i=this.buscarTrabajador();
@@ -66,7 +64,7 @@ public class Trabajador {
         }
        
     }
-    
+    //todos los get y set correspondientes
     public String getMatricula() {
         return matricula;
     }

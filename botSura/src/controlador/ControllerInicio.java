@@ -11,7 +11,7 @@ import botsura.leerArchivo;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import vista.inicio;
-import vista.ventana1;
+import vista.Capacitacion;
 
 /**
  *
@@ -28,24 +28,25 @@ public class ControllerInicio implements ActionListener{
     public ControllerInicio(inicio view,Trabajador model){
         this.model =model;
         this.view = view;
-        this.view.Trabajador.addActionListener(this); //acciÃ³n del botÃ³n.
+        this.view.Trabajador.addActionListener(this); //acción del botón.
     }
-        //mÃ©todo para iniciar la vista
+        //método para iniciar la vista
     public void inciar(){
         view.setTitle("Inicio"); //titulo
         view.setLocationRelativeTo(null); //posicion.
         view.setVisible(true);
     }
     
-    @Override  //funciï¿½n que realiza el botï¿½n
+    @Override  //función que realiza el botón
     public void actionPerformed(ActionEvent e) {
-       Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText()); 
+       Trabajador t= new Trabajador(view.matricula.getText(),view.correo.getText()); //recupero el correo y la
+                                        //matricula que se ingreso en la interfaz.
       int valor;
 
-      if(e.getSource()== view.Trabajador){
+      if(e.getSource()== view.Trabajador){ //si ocurrel el evento trabajador(dar click en buscar)
         valor=t.buscarTrabajador();
         if(valor>=0){
-            ventana1 abrir = new ventana1();
+            Capacitacion abrir = new Capacitacion();
             abrir.setVisible(true);
         }
         else{

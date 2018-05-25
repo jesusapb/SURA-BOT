@@ -16,15 +16,15 @@ public class BotSura {
     
      
       
-      
+      //creamos 2 objetos para llamar al controlador
        inicio view = new inicio();
        Trabajador mod = new Trabajador();
        
                
-      
+      //llamamos al controlador
        ControllerInicio ctrl = new ControllerInicio(view,mod);
-       ctrl.inciar();
-       view.setVisible(true);
+       ctrl.inciar(); //iniciamos la primera ventana
+       view.setVisible(true); 
        
     }
 }

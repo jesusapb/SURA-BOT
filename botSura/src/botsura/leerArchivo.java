@@ -16,6 +16,7 @@ public class leerArchivo {
     Scanner file;
     public ArrayList<String> lista;
     
+    //método para leer el archivo y lo pone en un ArrayList
     public leerArchivo(String archivo){
 
     this.lista =new ArrayList<>();  
@@ -75,7 +76,7 @@ public class leerArchivo {
            }
     }
     }
-    //en la forma en la que se creo el metodo permite añadir mas informacion ademas de la contraseña y matricula
+    //en la forma en la que se creó el método permite añadir mas información además de la contraseña y matricula
     public int buscarTrabajador(String matricula, String contra){
        int k=-1;
        for(int i=0;i<lista.size();i++){
