@@ -25,3 +25,6 @@ Matrícula: 333
 Correo: karina
 Calificación: 40
 No haz sido aprobado
+
+Matrícula: hj
+Correo: ghj
